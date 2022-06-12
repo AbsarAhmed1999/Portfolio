@@ -1,0 +1,639 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(10,20,30,1),rgba(50,30,40,0.45)),url("./img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.banner-content{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: flex-end;
+  color: white;
+}
+
+.container{
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.banner__text{
+  width: 500px;
+}
+
+.banner__text h3{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.banner__text h1{
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 900;
+}
+
+.banner__text p{
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.nav-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+}
+
+.nav-text{
+  align-items: center; 
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 70px;
+}
+
+.logo{
+  width: 40%;
+  position: relative;
+}
+.logo img{
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  width: 100px;
+  border-radius: 100px;
+  
+}
+
+
+.navbar_ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar_ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.navbar_ul li{
+  padding: 0 3px;
+  margin: 0 3px;
+}
+
+.banner_btn{
+  margin: 30px 0;
+
+}
+
+.btn{
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 15px 25px;
+ 
+}
+
+.btn-smart{
+  background:rgb(255, 69, 79);
+}
+
+.about{
+  padding: 80px 0;
+}
+
+.p-25{
+  padding: 50px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-3{
+  width: 25%;
+  margin: 0 10px;
+  padding: 40px 0;
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+.about h3{
+  color: rgba(37,37,37,0.7);
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.about h1{
+  font-size: 40px;
+  color: #252525;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.about p{
+  font-size: 18px;
+  color: #8b8b8b;
+  font-weight: 300; 
+}
+
+.about_btn{
+  margin-top: 45px;
+}
+
+.about_img{
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  height: 80%;
+  
+}
+
+.about_img img{
+  width: 80%;
+}
+
+.shop{
+  width: 100%;
+  background:linear-gradient(rgba(40,40,40,0.8),rgba(50,50,50,0.8)), url("./img/pizzashop.jpg");
+  height: 450px;
+  background-attachment: fixed;
+
+}
+
+.shop_text{
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.shop_text h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+.shop_btn {
+  margin-top: 35px;
+}
+
+.clients {
+  width: 100%;
+  padding: 100px 0;
+  background:#222121;
+  color: #fff;
+  
+}
+
+.client{
+  
+  text-align: center;
+  
+}
+
+.client h1 {
+  font-style: 45px;
+  font-size: 50px;
+}
+
+.client p {
+  font-style: 18px;
+  font-weight: 400;
+  color: #B9BBB6;  
+}
+
+
+.Form{
+  width: 100%;
+}
+
+
+.form-content{
+  display: flex;
+  width: 1250px;
+  padding: 70px 0;
+}
+
+
+.form-text{
+  width: 60%;
+}
+
+.form-text h3{
+  color:#615f5f;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+.form-text h1{
+  font-size: 40px;
+  font-style: 18px;
+  font-weight: 700;
+}
+
+.form-text p{
+  padding-top: 25px;
+  color:#615f5f;
+}
+
+.form-content img {
+  width: 80%;
+}
+
+.image img{
+  width: 100%;
+  height: 530px;
+  border: none;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 15px 0;
+  
+}
+
+.form{
+  margin-top: 20px;
+}
+
+.firstName{
+  font-size: 15px;
+  width: 220px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin-top: 45px;
+}
+
+input {
+  border: 1px solid black;
+  outline: none;
+}
+
+.lastName{
+  font-size: 15px;
+  width: 220px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin-left: 15px;
+}
+
+.street{
+  font-size: 15px;
+  width: 450px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin: 20px 0;
+}
+
+.apartment{
+  font-size: 15px;
+  width: 220px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin: 5px 0;
+}
+
+.phone{
+  font-size: 15px;
+  width: 220px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin-left: 15px;
+}
+
+.pizzatype{
+  font-size: 15px;
+  width: 450px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin: 20px 0;
+}
+
+.form-btn{
+  margin: 20px 0;
+}
+
+.prices{
+  margin: 50px 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 80px;
+}
+
+.grid-item{
+  
+}
+
+.grid-item img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-left: 100px;
+}
+
+.grid-item h1,p,h2{
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item h1{
+  font-weight: 500;
+}
+
+.grid-item h2{
+  font-weight: 420;
+  font-size: 32px;
+}
+
+.grid-item p{
+  font-weight: 400;
+  color: #888888;
+}
+
+@media(max-width: 700px){
+
+  .nav-text{
+    align-items: center; 
+    width: 30%;
+    margin: 100px 35px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+
+  }
+
+  .logo img{
+    width: 80px;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+.banner__text{
+  width: 100%;
+}
+
+.banner__text h3{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.banner__text h1{
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+}
+
+.banner__text p{
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-6{
+  width: 100%;
+}
+
+.about h3{
+  color: rgba(37,37,37,0.7);
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about h1{
+  font-size: 30px;
+  color: #252525;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about p{
+  font-size: 18px;
+  color: #8b8b8b;
+  font-weight: 300; 
+  text-align: center;
+}
+
+.about_btn{
+  text-align: center;
+}
+
+.about_btn{
+  margin-top: 45px;
+}
+
+.about_img{
+  width: 60%;
+  overflow: hidden;
+  background-size: cover;
+  height: 80%;
+  margin: 0 200px;
+}
+
+.about_img img{
+  width: 70%;
+}
+
+.shop_text div{
+  text-align: center;
+}
+
+
+.shop_text h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
+
+.shop{
+  width: 100%;
+  background:linear-gradient(rgba(40,40,40,0.8),rgba(50,50,50,0.8)), url("./img/pizzashop.jpg");
+  height: 370px;
+  background-attachment: fixed;
+}
+
+.shop_text{
+  margin: -45px 0;
+}
+
+.shop_btn{
+  text-align: center;
+}
+
+
+.clients {
+  width: 100%;
+  padding: 100px 0;
+  background:#222121;
+  color: #fff;
+  
+}
+
+.client-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.client{
+  text-align: center;
+}
+
+.client h1 {
+  font-style: 35px;
+  font-size: 25px;
+}
+
+.client p {
+  font-style: 18px;
+  font-weight: 250;
+  color: #B9BBB6;
+  font-size: 15px;  
+}
+
+.col-3{
+  width: 30%;
+  height: 130px;
+  margin: 0 10px;
+  padding: 30px 0;
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+.Form{
+  width: 100%;
+}
+
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+
+.form-text{
+  width: 80%;
+}
+
+.form-text h3{
+  color:#615f5f;
+  padding: 20px 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.form-text h1{
+  font-size: 40px;
+  font-style: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-text p{
+  padding-top: 25px;
+  color:#615f5f;
+}
+
+.form{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.image{
+  width: 80%;
+  margin: 50px 0;
+}
+
+.form-content img {
+  width: 100%;
+}
+
+.grid-container{
+  display: grid;
+  height: 200px;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(6,1fr);
+  
+}
+
+.grid-item img{
+  margin: 0 0;
+}
+
+
+}
+
+
+
