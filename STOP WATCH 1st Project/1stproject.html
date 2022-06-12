@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css"/>
+        <title>First Project </title>
+    </header>
+    <body>
+        <div class="center">
+            <div class="col">
+                <h1>Stop Watch</h1>
+            </div>    
+        </div>
+        <div class="center">
+            <div class="col">
+                <h2>Vanilla Javascript Stopwatch</h2>
+            </div>
+        </div>
+        <div class="center">
+            <div class="col">
+
+                <span id="seconds">00</span>:
+                <span id="tens">00</span>
+
+            </div>
+        </div>
+        <div class="center">
+            <div class="col">
+            <button id="button-start">Start</button>
+            <button id="button-stop">Stop</button>
+            <button id="button-reset">Reset</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        window.onload =function (){
+        var tens=0;
+        var seconds = 0;
+        var Appseconds = document.getElementById("seconds");
+        var Apptens = document.getElementById("tens");
+        var Start = document.getElementById("button-start");
+        var Stop = document.getElementById("button-stop");
+        var Reset = document.getElementById("button-reset");
+        var Interval;
+
+        Stop.onclick = () =>{
+            clearInterval(Interval);
+        }
+
+        Reset.onclick = ()=>{
+            clearInterval(Interval);
+            tens='00';
+            seconds='00';
+            Appseconds.innerHTML=tens;
+            Apptens.innerHTML=seconds;
+        }
+
+
+
+
+        Start.onclick = () =>{
+            clearInterval(Interval);
+            Interval = setInterval(StartTimer,10);
+            
+        }
+        const StartTimer = () =>{
+            tens++;
+            if(tens <= 9){
+            
+                Apptens.innerHTML = "0"+tens;
+            }
+            if (tens > 9){
+                
+                Apptens.innerHTML = tens;
+            }
+            if(tens>99){
+                
+                seconds++;
+                tens=0;
+                Appseconds.innerHTML="0"+seconds;
+            }
+            if(seconds>9){
+                
+                Appseconds.innerHTML = seconds;
+            }
+        }
+    }
+        
+    </script>
+</html>

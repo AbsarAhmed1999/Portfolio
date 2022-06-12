@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.5px 30px 0 rgb(0, 0, 0, 0.2);
+}
+
+.col-1{
+    margin-left: 15px;
+}
+
+.col-2{
+    width: 400px;
+    
+}
+
+.col-2 ul{
+    list-style: none;
+}
+
+.col-2 ul li {
+    display: inline;
+}
+
+.col-2 ul li a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon-ul{
+    font-size: 25px;
+    list-style: none;
+    
+}
+
+.icon-ul li {
+    display: inline;
+}
+
+.icon-ul li a{
+    padding: 0 5px;
+}
+
+.hamburger{
+    display: hidden;
+}
+
+.square-box{
+    visibility: hidden;
+}
+
+
+
+
+/* MEDIA SCREEN */ 
+
+@media screen and (max-width: 700px) {
+    .col-2{
+        display: none;
+    }
+    .col-3{
+        display: none;
+    }
+    
+.hamburger{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: 25px;
+}
+
+.hamburger div{
+    background-color: blue;
+    margin: 5px 0;
+}
+
+.ham1{
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.ham2{
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.ham3{
+    height: 5px;
+    border-radius: 10px;
+}
+
+.navbar-container{
+    box-shadow: none;
+}
+
+
+
+.square-box{
+    visibility: visible;
+    box-shadow: 0 15px 18px 0px rgb(0, 0, 0 ,0.2);
+}
+
+
+
+.square-box li a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.square-box li {
+    padding: 8px 8px;
+}
+
+.square-box li:hover{
+    background-color: rgb(190, 206, 255);
+}
+
+.links{
+    height: 0; 
+    overflow: hidden;   
+}
+
+
+}
+
+/* BY DEFAULT LINK MUST BE HIDDEN BUT MY LINK BY DEFAULT IS SHOWING WHICH IS A MISTAKE HERE */ 

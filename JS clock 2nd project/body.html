@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>JS CLOCK</title>
+        <link rel="stylesheet" href="style.css"/>
+    </header>
+    <body>
+        <div class="timer">
+            
+            <span id="Hours">Hours</span>:
+            <span id="minutes">Minutes</span>:
+            <span id="seconds">Seconds</span>
+            <span id="DN">AM</span>
+        </div>
+    </body>
+    <script>
+            var Hours = document.getElementById("Hours");
+            var min = document.getElementById("minutes");
+            var seconds = document.getElementById("seconds");
+            var DN = document.getElementById("DN");
+        function showTime(){
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            
+
+            Hours.innerHTML =h;
+            min.innerHTML = m;
+            seconds.innerHTML = s;
+
+            if(h==0){
+                h=12;
+            }
+            if(h>12){
+                h = h-12;
+                DN.innerHTML ="PM";
+            }
+            
+            setTimeout(showTime,1000);
+        }
+        showTime();
+
+    </script>
+</html>
